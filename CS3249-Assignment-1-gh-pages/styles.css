@@ -53,9 +53,6 @@ a:visited {
     width:80%
 
 }
-#col-lg-6{
-    padding: 0;
-}
 header {
     background-color: #fff;
     background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/symphony.png');
@@ -75,7 +72,7 @@ header img {
 nav {
     clear: left;
     float: left;
-    width: 110%;
+    width: 100%;
 }
 
 nav ul {
@@ -112,11 +109,11 @@ article {
 
 article h1 {
     background-color:"#FFFFFF" 
-    font-size: 2vw;
+
 }
 
 article h2 {
-    font-size: 1.5em;
+  
     margin-bottom: 0;
     color: #06b0c9;
 }
@@ -127,9 +124,6 @@ aside {
     background-color: rgba(255, 255, 255, 0.8);
     color: #666;
   
-}
-aside h1 {
-    font-size: 1.5em;
 }
 
 section {
@@ -160,12 +154,13 @@ footer {
 
 .promise-container {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 33%;
+    height: 20vw;
     background: url('images/circle.jpg');
-    background-size: 175px 175px;
+    background-size: auto 12vw;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .has-inline-elements {
@@ -180,7 +175,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     color: white;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .fancybox-title {
@@ -194,7 +189,44 @@ footer {
     padding: 10%;
 }
 
-@media screen and (max-width : 640px){
+.button{
+  margin-left: 40%;
+}
+@media(max-width : 960px){
+    
+    header img {
+        width: 100%;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 100%;
+      
+        background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/symphony.png');
+    }
+    
+    .promise-container {
+        background-size: auto 20vw;
+    }
+    
+    .promise {
+        font-size: 2vw;
+    }
+    
+    .fancybox-title {
+        font: 1em/1.6 lato;
+        text-align: center;
+    }
+
+    aside{
+        font-size :0.5em;
+        img{
+            width:20%;
+        }
+    }
+
+}
+
+@media(max-width : 640px){
     
     nav {
         clear: left;
@@ -208,10 +240,6 @@ footer {
     }   
     #wrapper{
         margin = 0;
-    }
-
-     #fboxpic{
-        width: 16%;
     }
 
 
